@@ -1,0 +1,309 @@
+    <%- include('./partials/header.ejs') %> 
+    <!-- My Eksternal CSS -->
+    <link rel="stylesheet" href="stylesheets/landing-page-style.css">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/0b4216d144.js" crossorigin="anonymous"></script>
+    
+    <title><%= title %></title>
+    
+  </head>
+  <body>
+    <section id="main">
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">Logo</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto ms-3 ms-lg-5 mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Work</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Me</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav ms-3 mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="/register">Sign Up</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/login">Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- navbar -->
+      <div class="container main">
+        <h1 class="display-1 mb-5">Play traditional game</h1>
+        <p class="mb-4">Experience new traditional gameplay</p>
+        <button class="btn btn-warning"><a href="/game">PLAY NOW</a></button>
+      </div>
+      <div class="container main scroll-btn">
+        <small class=>THE STORY</small>
+        <a href="#about"><i class="fa-solid fa-sort-down fa-2xl"></i></a>
+      </div>
+    </section>
+    <!-- about section -->
+    <section id="about">
+      <div class="container">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5">
+              <h6>What's so special?</h6>
+              <h2>The game</h2>
+            </div>
+            <div class="col-md-7">
+              <div id="carouselExampleIndicators" class="carousel slide mt-5" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="/images/landing-page/rockpapers.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/images/landing-page/rockpapers.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/images/landing-page/rockpapers.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <i class="fa-solid fa-caret-left fa-2xl" aria-hidden="true"></i>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <i class="fa-solid fa-caret-right fa-2xl" aria-hidden="true"></i>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- features section -->
+    <section id="features">
+      <div class="container pt-5 pb-5">
+        <div class="container pt-5">
+          <div class="row">
+            <div class="col-md-6 ms-auto">
+              <h6>what's so special?</h6>
+              <h2 class="mb-3">features</h2>
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="true" aria-controls="flush-collapseOne">
+                      Traditional games
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse show" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">If you miss your childhood, we provide many traditional games here</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      Game suit
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      TBD
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                  </div>
+                </div>
+              </div>    
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- requirement section -->
+    <section id="requirements">
+      <div class="container pt-5 pb-5">
+        <div class="container">
+          <h6 class="text-center">can my computer run this game?</h6>
+          <h2 class="mt-5 mb-5 display-3">system <br> requirements</h2>
+          <div class="table-responsive-sm">
+            <table class="table table-bordered border-secondary">
+              <tr>
+                <td>
+                  <h3>processor</h3>
+                  <p>Intel Core 2 Duo @ 2.4 GHZ or AMD Athlon X2 @ 2.8 GHZ</p>
+                </td>
+                <td>
+                  <h3>processor</h3>
+                  <p>Intel Core 2 Duo @ 2.4 GHZ or AMD Athlon X2 @ 2.8 GHZ</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <h3>processor</h3>
+                  <p>Intel Core 2 Duo @ 2.4 GHZ or AMD Athlon X2 @ 2.8 GHZ</p>
+                </td>
+                <td>
+                  <h3>processor</h3>
+                  <p>Intel Core 2 Duo @ 2.4 GHZ or AMD Athlon X2 @ 2.8 GHZ</p>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <h3>processor</h3>
+                  <p>Intel Core 2 Duo @ 2.4 GHZ or AMD Athlon X2 @ 2.8 GHZ</p>
+                </td>
+              </tr>
+            </table>  
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- quote section -->
+    <section id="top-score">
+      <div class="container pt-5 pb-5">
+        <div class="row">
+          <div class="col-sm-5 d-flex align-items-md-center">
+            <div class="container">
+              <h2 class="mb-5">top scores</h2>
+              <p class="mb-5">This top score from various games provided on this platform</p>
+              <button class="btn btn-warning">see more</button>
+            </div>
+          </div>
+          <div class="col-sm-7">
+            <div class="container">
+              <div class="card bg-dark ms-auto border-0">
+                <div class="d-flex p-3 pb-0">
+                    <img src="images/landing-page/avatar/evan.png" class="card-img shadow-img rounded-circle" alt="avatar">
+                  <div class="ms-4">
+                    <h5 class="card-title">Evan Lahti</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">PC Gamer</h6>  
+                  </div>
+                  <a href="" class="ms-auto text-muted"><i class="fa-brands fa-twitter fa-lg"></i></a>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">“One of my gaming highlights of the year.”</p>
+                  <small class="text-muted">June 18, 2021</small>
+                </div>
+              </div>
+              <div class="card bg-dark border-0">
+                <div class="d-flex p-3 pb-0">
+                    <img src="images/landing-page/avatar/jada.png" class="card-img shadow-img rounded-circle" alt="avatar">
+                  <div class="ms-4">
+                    <h5 class="card-title">Jada Griffin</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Nerdreactor</h6>  
+                  </div>
+                  <a href="" class="ms-auto text-muted"><i class="fa-brands fa-twitter fa-lg"></i></a>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">“The next big thing in the world of streaming and survival games.”</p>
+                  <small class="text-muted">July 10, 2021</small>
+                </div>
+              </div>
+              <div class="card bg-dark ms-auto border-0">
+                <div class="d-flex p-3 pb-0">
+                    <img src="images/landing-page/avatar/aaron.png" class="card-img shadow-img rounded-circle" alt="avatar">
+                  <div class="ms-4">
+                    <h5 class="card-title">Aaron Williams</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Uproxx</h6>  
+                  </div>
+                  <a href="" class="ms-auto text-muted"><i class="fa-brands fa-twitter fa-lg"></i></a>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">“Snoop Dogg Playing The Wildly Entertaining ‘SOS’ Is Ridiculous.”</p>
+                  <small class="text-muted">December 24, 2018</small>
+                </div>
+              </div>              
+            </div>
+          </div>
+        </div>    
+      </div>
+    </section>
+    <!-- newsletter section -->
+    <section id="newsletter">
+      <div class="container pt-5 pb-5">
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="container">
+              <img class="img-fluid" src="images/landing-page/skull.png" alt="skull">
+            </div>
+          </div>
+          <div class="col-sm-7 d-flex align-items-md-center">
+            <div class="container">
+              <h6>Want to stay in <br> touch?</h6>
+              <h2 class="display-3">newsletter subscribe</h2>
+              <p class="mb-5">In order to start receiving our news, all you have to do is enter your email address. Everything else will be taken care of by us. We will send you emails containing information about game. We don’t spam.</p>
+              <!-- form -->
+              <form action="">
+                <div class="d-flex">
+                  <div class="d-inline-block form-email bg-dark rounded">
+                    <label class="label text-muted d-block" for="exampleInputEmail1">Your email address</label>
+                    <input type="email" name="email" id="exampleInputEmail1" placeholder="youremail@binar.co,id">  
+                  </div>
+                  <button class="btn btn-warning ms-auto" type="submit">Subscribe now</button>  
+                </div>
+              </form>
+              <!-- form -->
+            </div>
+          </div>
+        </div>  
+      </div>
+      <!-- footer section -->
+      <footer class="footer">
+        <!-- Grid container -->
+        <div class="container pt-3 pb-3">
+          <div class="container">
+            <!-- footer's navigation -->
+            <div class="row">
+              <div class="col-8">
+                <p><a href="#main">MAIN</a></p>
+                <p><a href="#about">ABOUT</a></p>
+                <p><a href="#features">GAME FEATURES</a></p>
+                <p><a href="#requirements">SYSTEM REQUIREMENTS</a></p>
+                <p><a href="#top-score">QUOTES</a></p>
+              </div>
+              <div class="col-4">
+                <!-- Facebook -->
+                <a class="icon" href="#"><i class="fa-brands fa-facebook-messenger fa-lg"></i></a>
+                <!-- Twitter -->
+                <a class="icon" href="#"><i class="fa-brands fa-twitter fa-lg"></i></a>
+                <!-- Youtube -->
+                <a class="icon" href="#"><i class="fa-brands fa-youtube fa-lg"></i></a>
+                <!-- twitch -->
+                <a class="icon" href="#"><i class="fa-brands fa-twitch fa-lg"></i></a>
+              </div>
+            </div>
+            <!-- footer's navigation -->
+            <hr class="white">
+            <!-- Copyright -->
+            <div class="d-flex justify-content-md-between">
+              <p class="text-muted">© 2018 Your Games, Inc. All Rights Reserved</p>
+              <p class="text-end m-0">PRIVACY POLICY | TERMS OF SERVICES | CODE OF CONDUCT</p>
+            </div>
+            <!-- Copyright -->
+          </div>
+        </div>
+        <!-- Grid container -->      
+      </footer>
+    </section>
+
+    <%- include('./partials/footer.ejs') %> 

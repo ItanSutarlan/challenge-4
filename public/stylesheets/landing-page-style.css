@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+/* styling for all in landing page*/
+body {
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  font-weight: 400;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+h6 {
+  text-transform: capitalize;
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+.btn.btn-warning {
+  height: 3.75em;
+  width: 16.25em;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.btn.btn-warning a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* styling for main section */
+#main {
+  background-image: url('/images/landing-page/main-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 720px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#main .container.main {
+  text-align: center;
+}
+
+.container.scroll-btn small {
+  display: block;
+}
+
+.container.scroll-btn a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* styling for navbar */
+.navbar .navbar-nav {
+  text-transform: uppercase;
+}
+
+nav.navbar.navbar-dark {
+  background-color: rgba(0,0,0,0.5);
+}
+
+/* styling for about section */
+#about {
+  background-image: url('/images/landing-page/the-games-bg.jpg');
+  background-size: cover;
+  min-height: 720px;
+  display: flex;
+  align-items: center;
+}
+
+/* styling for carousel */
+.carousel {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+button.carousel-control-prev {
+  margin-left: -3.5rem;
+}
+
+button.carousel-control-next {
+  margin-right: -3.5rem;
+}
+
+.carousel .carousel-indicators > button {
+  border-radius: 50%;
+  margin-left: 15px;
+  margin-right: 15px;
+  height: 10px;
+  width: 10px;
+}
+
+/* styling for features section */
+#features {
+  background-image: url('/images/landing-page/features.jpg');
+  background-size: cover;
+  min-height: 720px;
+}
+
+/* styling for accordion */
+.accordion {
+  background: none;
+  margin-left: 50px;
+}
+
+.accordion .accordion-item {
+  background: none;
+  border: none;
+  position: relative;
+}
+
+.accordion h2.accordion-header {
+  display: flex;
+  align-items: center;
+  background: none;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  height: 50px;
+  line-height: 50px;
+}
+
+.accordion button {
+  background: transparent;
+  border: none;
+  color: #ffb548;
+  position: relative;
+  font-size: 1.5rem;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.accordion button:before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  background: #fff;
+  border: 2px solid #fff;
+  position: absolute;
+  top: 15px;
+  left: -48px;
+}
+
+.accordion button.collapsed::before {
+  background: none;
+}
+
+.accordion .accordion-body {
+  background: none;
+}
+
+.accordion .accordion-body:before {
+  content: '';
+  width: 2px;
+  height: 100%;
+  background: #fff;
+  position: absolute;
+  top: 15px;
+  left: -39px;
+}
+
+/* styling for requirements section */
+#requirements {
+  background-image: url('/images/landing-page/requirement.jpg');
+  background-size: cover;
+  min-height: 720px;
+}
+
+.table {
+  color: #fff;
+}
+
+.table h3 {
+  color: #ffb548;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop */
+  .table {
+    width: 60%;
+  }
+}
+
+/* styling for quotes section */
+#top-score {
+  background-image: url('/images/landing-page/top-score-bg.png'),
+    url('/images/landing-page/top-score-bg-2.jpg');
+}
+
+/* custom styling for card */
+.card {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  max-width: 423px;
+  width: 100%;
+}
+
+.card-img {
+  width: 62px;
+  height: 62px;
+}
+
+.shadow-img {
+  box-shadow: 7px 2px #ffb548;
+}
+
+.card-title {
+  font-family: 'Arial';
+  font-size: 1.5rem;
+  color: #ffb548;
+}
+
+.card-subtitle,
+.card-body {
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.card-body small {
+  font-size: 0.875rem;
+}
+
+/* styling for newsletter section */
+#newsletter {
+  background-color: #080a0b;
+}
+
+input[type='email'] {
+  border: none;
+  background: none;
+  color: #ffb548;
+  font-size: 1.125rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input[type='email']::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #ffb548;
+  font-size: 1.125rem;
+}
+
+input:focus {
+  outline: none;
+}
+
+.label {
+  font-size: 0.875rem;
+}
+
+.form-email {
+  margin-right: 10px;
+  height: 3.75rem;
+  width: 22.933rem;
+  padding: 5px 20px;
+}
+
+/* styling for footer section,
+styling for footer navigation */
+.footer a {
+  color: #fff;
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  margin-left: 0.638rem;
+}
+
+.footer a.icon {
+  text-align: end;
+}
+
+hr.white {
+  border: 1px solid #fff;
+}
+
+/* styling for copyright */
+.footer p {
+  font-size: 0.75rem;
+  font-weight: bold;
+  margin-right: 1rem;
+}
+
+.footer p.text-muted {
+  font-size: 0.875rem;
+  font-weight: normal;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  /* styling for footer navigation */
+  .footer .col-8,
+  .footer .col-4 {
+    display: flex;
+    justify-content: end;
+  }
+}
+
+/* custom styling for specific icons */
+.fa-twitter:hover {
+  color: #1da1f2;
+}
+
+.fa-facebook-messenger:hover {
+  color: #006aff;
+}
+
+.fa-youtube:hover {
+  color: #ff0000;
+}
+
+.fa-twitch:hover {
+  color: #6441a5;
+}
+
+span.bi-caret-left {
+  color: #fff !important;
+}

@@ -1,0 +1,53 @@
+  <%- include('./partials/header.ejs') %> 
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="stylesheets/game-style.css">
+
+    <title><%= title %> </title>
+  </head>
+  <body>
+    <div class="game-container">
+      <!-- navbar section -->
+      <nav class="navbar navbar-light mb-4">
+        <div class="container-fluid">
+          <a href="/"><img class="nav-link" src="./images/game/back.png" alt="back to prev"></a>
+          <a class="navbar-brand fw-bold ms-3 me-auto" href="#">
+            <img src="./images/game/logo.png" alt="" class="d-inline-block">
+            ROCK PAPER SCISSORS
+          </a>
+        </div>
+      </nav>
+      <!-- section for game -->
+      <div class="container">
+        <div class="row d-md-flex flex-md-row justify-content-md-evenly text-center">
+          <!-- section for player choices  -->
+          <div class="col-lg-3">
+            <div class="player-choices container">
+              <h2 class="option-header fw-bolder">PLAYER 1</h2>
+              <button onclick="game.play(`rock`)" type="button" id="player-rock" class="btn shadow-none"><img src="./images/game/rock.png" alt="rock"></button>
+              <button onclick="game.play(`paper`)" type="button" id="player-paper" class="btn shadow-none"><img src="./images/game/paper.png" alt="paper"></button>
+              <button onclick="game.play(`scissors`)" type="button" id="player-scissors" class="btn shadow-none"><img src="./images/game/scissors.png" alt="scissors"></button>
+            </div>
+          </div>
+          <!-- game info section -->
+          <div class="col-lg-4 p-3 d-flex flex-column justify-content-around">
+            <h2>PLAYER: <span id="player-score">0</span></h2>
+            <div id="result" class="versus align-self-center">vs</div>
+            <h2>COM: <span id="computer-score">0</span></h2>
+            <button onclick="game.refresh(this)" id="refresh" class="reset mx-auto mt-4"><img class="" src="./images/game/refresh.png" alt="refresh"></button>
+          </div>
+          <!-- section for computer choices -->
+          <div class="col-lg-3">
+            <div class="com-choices container">
+              <h2 class="option-header fw-bolder">COM</h2>
+              <button type="button" id="com-rock" class="btn"><img src="./images/game/rock.png" alt="rock"></button>
+              <button type="button" id="com-paper" class="btn"><img src="./images/game/paper.png" alt="paper"></button>
+              <button type="button" id="com-scissors" class="btn"><img src="./images/game/scissors.png" alt="scissors"></button>
+            </div>
+          </div>
+        </div>  
+      </div>
+    </div>
+
+    <script src="/javascripts/script.js"></script>
+    <%- include('./partials/footer.ejs') %> 

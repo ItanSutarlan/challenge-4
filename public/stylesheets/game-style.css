@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.game-container {
+    background-color: #9C835F;
+    height: 100vh;
+}
+
+
+/* styling for nav */
+.navbar .navbar-brand {
+    color:#F9B23D;
+}
+
+.navbar img {
+    height: 50px;
+}
+
+/* styling for options */
+.btn {
+    margin: 16px;
+    width: 18.6vh;
+    height: 18.6vh;
+}
+
+
+.btn.bg-light {
+    border-width: 1px;
+    border-radius: 15px;
+}
+
+.com-choices > .btn {
+    pointer-events: none;
+}  
+
+.btn > img {
+    height: 10.5vh;
+}
+
+
+/* styling for result */
+
+.versus {
+    color: red;
+    font-size: 90px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.winner {
+    background-color: #4C9654;
+    border-radius: 10px;
+    color: #fff;
+    font-size:  35px;
+    font-weight: 600;
+    padding: 7px;
+    text-transform: uppercase;
+    transform: rotate(-20deg);
+    width: 200px;
+}
+
+.draw {
+    background-color: #035B0C;
+    border-radius: 10px;
+    color: #fff;
+    font-size:  35px;
+    font-weight: 600;
+    padding: 20px;
+    text-transform: uppercase;
+    transform: rotate(-20deg);
+    width: 150px;
+}
+
+button.reset, button.reset img {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    width: 40px;
+    transition: 1s;
+}
+
+button.active {
+    transform: rotate(360deg);
+}
+
+
+@media only screen and (max-width: 992px) {
+    /* styling for navbar */
+    .navbar .navbar-brand {
+    font-size: 1rem;
+    }
+
+    .navbar img {
+        height: 45px;
+    }
+
+    /* styling for options */
+    .option-header {
+        display: none;
+    }
+
+    .player-choices, .com-choices {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .btn {
+        margin: 16px;
+        width: 25%;
+        height: 13vh;
+    }
+    
+    .btn > img {
+        height: 8vh;
+        width: 50%;
+    }
+
+    /* styling for result */
+    .winner {
+        font-size:  25px;
+        padding: 7px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        width: 150px;
+    }
+    
+    .draw {
+        font-size:  25px;
+        padding: 15px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }    
+
+
+    .btn.reset {
+        display: none;
+    }
+    
+}

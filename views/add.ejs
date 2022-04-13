@@ -1,0 +1,61 @@
+<%- include('./partials/header.ejs') %> 
+<title>Add User</title>
+  </head>
+  <body style="background-color: #080a0b;">
+    <div class="container text-white d-flex align-items-center justify-content-center">
+      <form action="/users" class="box-shadow p-5 w-50" method="POST">
+        <div class="img-text text-center">
+          <h2 class="text-center px-4">
+            ADD NEW USER
+          </h2>
+        </div>
+        <div class="mb-2">
+          <label for="username" class="form-label">User Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="usename"
+            name="username"
+          />
+        </div>
+        <div class="mb-2">
+          <label for="firstName" class="form-label">First Name</label>
+          <input type="text" class="form-control" name="firstName" id="firstName" />
+        </div>
+        <div class="mb-2">
+          <label for="lastName" class="form-label">Last Name</label>
+          <input
+            type="text"
+            class="form-control"
+            name="lastName"
+            id="lastName"
+          />
+        </div>
+        <div class="mb-2">
+            <label for="score" class="form-label">Score</label>
+            <input
+              type="text"
+              class="form-control"
+              name="score"
+              id="score"
+            />
+        </div>  
+        <div class="mb-2">
+          <label for="password" class="form-label">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            name="password"
+            id="password"
+          />
+        </div>
+        <button
+          type="submit"
+          class="btn btn-primary w-100 css-button-sliding-to-bottom--blue"
+          id="submit"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
+    <%- include('./partials/footer.ejs') %> 
